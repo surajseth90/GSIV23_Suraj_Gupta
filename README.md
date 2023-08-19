@@ -1,6 +1,7 @@
 ### `Deployed Build URL`
 
 [https://64e07bb044ad10321154a8b3--dashing-lamington-2460cd.netlify.app/](https://64e07bb044ad10321154a8b3--dashing-lamington-2460cd.netlify.app/)
+Note - Please refresh the URL if it does not work for the first time
 
 ### `To Start the Project`
 
