@@ -19,6 +19,8 @@ function Footer(props) {
             let page = currentPage - 1;
             dispatch(actions.setCurrentPage(page));
             props.fetchMovies(page);
+            if (page === 1)
+              document.getElementsByClassName("home-button")[0].focus();
           }}
           disabled={currentPage === 1}
           className="button-icon"

@@ -25,7 +25,12 @@ function Header(props) {
   return (
     <header className="home-screen-header">
       {selectedMovieId === null ? (
-        <div className="search-bar">
+        <div
+          className="search-bar"
+          onClick={() =>
+            document.getElementsByClassName("search-input")[0].focus()
+          }
+        >
           <img className="icon" src={SearchIcon} />
 
           <input
