@@ -1,0 +1,28 @@
+.detail-screen {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+  padding: 0 15px;
+  display: flex;
+
+  .image-container {
+    img {
+      width: 200px;
+      height: 210px;
+    }
+  }
+  .movie-info {
+    margin-left: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .movie-info-row {
+      margin-bottom: 10px;
+    }
+  }
+}

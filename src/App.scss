@@ -51,6 +51,16 @@ button {
   background-size: contain;
 }
 
+.loader {
+  border: 5px solid #9b9b9b;
+  border-top: 5px solid #423860;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  margin-top: -4px;
+}
+
 .main-loader {
   border: 13px solid #f3f3f3;
   border-top: 16px solid #423860;

@@ -5,6 +5,24 @@
   height: 80%;
   padding: 0 15px;
 
+  .no-result-found {
+    text-align: center;
+  }
+
+  .movies-container::-webkit-scrollbar {
+    width: 0.5em;
+    display: none;
+  }
+
+  .movies-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+
+  .movies-container:hover::-webkit-scrollbar-thumb {
+    background-color: #555;
+  }
+
   .movies-container {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -37,6 +55,12 @@
       justify-content: space-between;
       align-items: center;
       height: 30px;
+    }
+
+    .movie-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 5px;
     }
 
     .movie-title {
