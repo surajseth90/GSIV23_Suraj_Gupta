@@ -1,0 +1,77 @@
+.app {
+  z-index: 500;
+  overflow: hidden;
+}
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+}
+
+button {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(155, 155, 155, 0.4);
+    border-radius: 50%;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px white, 0 0 0 5px black !important;
+  }
+  &:disabled {
+    pointer-events: none;
+    touch-action: none;
+    cursor: auto;
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+.main-loader {
+  border: 13px solid #f3f3f3;
+  border-top: 16px solid #423860;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -60px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,7 +1,18 @@
 import "./App.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainScreen from "./components/MainScreen";
 
 function App() {
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainScreen />} />
+          <Route path="*" element={<div> Page Not Found </div>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,34 @@
+.home-screen-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-bottom: 2px solid #9b9b9b;
+
+  .search-bar {
+    width: 40%;
+    height: 66%;
+    border-radius: 10px;
+    background-color: #dfdfdf;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
+  }
+
+  input {
+    width: 90%;
+    margin-left: 11px;
+    background: transparent;
+    border: none;
+  }
+
+  input:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
